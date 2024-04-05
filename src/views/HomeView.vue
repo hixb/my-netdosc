@@ -3,6 +3,8 @@
 
 <template>
   <main class="text-3xl font-bold underline">
-    1
+    <AButton type="primary">
+      1
+    </AButton>
   </main>
 </template>
