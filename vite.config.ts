@@ -27,11 +27,13 @@ export default defineConfig({
         'vue',
         '@vueuse/core',
       ],
+      dts: 'src/auto-imports.d.ts',
     }),
     Components({
       resolvers: [ArcoResolver({
         sideEffect: true,
       })],
+      dts: 'src/components.d.ts',
     }),
   ],
   resolve: {
