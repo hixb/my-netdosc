@@ -19,9 +19,14 @@ export default defineConfig({
         ArcoResolver(),
       ],
       dirs: [
-        './src/composables/*.ts',
+        'src/composables',
+        'src/stores',
       ],
       vueTemplate: true,
+      imports: [
+        'vue',
+        '@vueuse/core',
+      ],
     }),
     Components({
       resolvers: [ArcoResolver({

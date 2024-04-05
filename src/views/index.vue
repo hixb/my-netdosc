@@ -3,7 +3,7 @@
 
 <template>
   <main class="text-3xl font-bold underline">
-    <AButton type="primary">
+    <AButton type="primary" @click="toggleDark()">
       1
     </AButton>
   </main>
