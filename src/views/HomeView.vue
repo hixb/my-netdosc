@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main>
+  <main class="text-3xl font-bold underline">
     1
   </main>
 </template>
