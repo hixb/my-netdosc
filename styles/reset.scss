@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 4px;
+}
+
+body {
+  background-color: var(--color-bg-1);
+  color: var(--color-text-1);
+}
+
+a {
+  transition: all .25s;
+
+  &:hover {
+    transition: all .25s;
+  }
+}
+
+.arco-icon {
+  font-size: 32px;
+  stroke-width: 1;
+}
