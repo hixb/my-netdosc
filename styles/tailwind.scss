@@ -2,21 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "variable";
 @import "reset";
 @import "common";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+[data-theme='light'], body[arco-theme="light"] {
+  --color-primary: $lightColorPrimary;
+  --color-suspension: $lightColorSuspension;
+  --color-click: $lightColorClick;
+  --color-special: $lightColorSpecial;
+  --color-disabled: $lightColorDisabled;
+  --color-text-disabled: $lightColorTextDisabled;
+  --color-light-suspension: $lightColorLightSuspension;
+
+  --theme-main-bg: $lightThemeTextColor;
+  --theme-text-color: $lightThemeMainBackground;
 }
 
-body[arco-theme="dark"] {
-  --color-regular: #c71010;
-  --color-suspension: #A70A0A;
-  --color-click: #A1050A;
-  --color-special: #FF4F00;
-  --color-disabled: #F14848;
-  --color-text-disabled: #FB5656;
-  --color-light-suspension: #FB7D7D;
+[data-theme='dark'], body[arco-theme="dark"] {
+  --color-primary: $darkColorPrimary;
+  --color-suspension: $darkColorSuspension;
+  --color-click: $darkColorClick;
+  --color-special: $darkColorSpecial;
+  --color-disabled: $darkColorDisabled;
+  --color-text-disabled: $darkColorTextDisabled;
+  --color-light-suspension: $darkColorLightSuspension;
+
+  --theme-main-bg: $darkThemeTextColor;
+  --theme-text-color: $darkThemeMainBackground;
 }

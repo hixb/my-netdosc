@@ -14,20 +14,16 @@ export default <Config>{
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        regular: 'var(--color-regular)',
+        primary: 'var(--color-primary)',
         suspension: 'var(--color-suspension)',
         click: 'var(--color-click)',
         special: 'var(--color-special)',
         disabled: 'var(--color-disabled)',
         textDisabled: 'var(--color-text-disabled)',
         lightSuspension: 'var(--color-light-suspension)',
+        mainBg: 'var(--theme-main-bg)',
       },
     },
-    spacing: Array.from({ length: 3000 }).reduce((map, _, index) => {
-      (map as any)[index] = `${index}px`
-
-      return map
-    }, {}),
   },
   plugins: [],
 }

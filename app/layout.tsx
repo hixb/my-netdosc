@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
-      <body className={barlow.className} arco-theme="dark" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={barlow.className} suppressHydrationWarning>
         <Providers>
           {children}
         </Providers>

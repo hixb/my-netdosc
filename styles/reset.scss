@@ -4,20 +4,21 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #808080;
+  background-color: var(--color-primary);
   border-radius: 4px;
 }
 
 body {
-  background-color: var(--color-bg-1);
-  color: var(--color-text-1);
+  background-color: var(--theme-main-bg);
+  color: var(--theme-text-color);
+  @include setTransition;
 }
 
 a {
-  transition: all .25s;
+  @include setTransition;
 
   &:hover {
-    transition: all .25s;
+    @include setTransition;
   }
 }
 

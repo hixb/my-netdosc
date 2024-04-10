@@ -1,0 +1,32 @@
+/* ==================== Transition Time Variables ==================== */
+$transitionTimeShort: .25s;
+$transitionTimeMedium: .3s;
+$transitionTimeLong: .5s;
+
+/* ==================== Light Color Variables ==================== */
+$lightColorPrimary: rgba(0, 112, 240, 1.000);
+$lightColorSuspension: rgba(13, 95, 188, 1.000);
+$lightColorClick: rgba(15, 85, 164, 1.000);
+$lightColorSpecial: rgba(45, 67, 103, 1.000);
+$lightColorDisabled: rgba(106, 172, 246, 1.000);
+$lightColorTextDisabled: rgba(190, 218, 255, 1.000);
+$lightColorLightSuspension: rgba(170, 204, 242, 1.000);
+
+$lightThemeTextColor: rgba(52, 52, 53, 1.000);
+$lightThemeMainBackground: rgba(255, 253, 252, 1.000);
+
+/* ==================== Dark Color Variables ==================== */
+$darkColorPrimary: rgba(65, 179, 117, 1.000);
+$darkColorSuspension: rgba(35, 197, 109, 1.000);
+$darkColorClick: rgba(81, 187, 129, 1.000);
+$darkColorSpecial: rgba(28, 212, 113, 1.000);
+$darkColorDisabled: rgba(16, 169, 86, 1.000);
+$darkColorTextDisabled: rgba(4, 109, 52, 1.000);
+$darkColorLightSuspension: rgba(1, 78, 36, 1.000);
+$darkThemeTextColor: rgba(255, 253, 252, 1.000);
+$darkThemeMainBackground: rgba(30, 30, 30, 1.000);
+
+/* ==================== Css Mixins ==================== */
+@mixin setTransition($s: $transitionTimeShort, $mode: all) {
+  transition: $mode $s;
+}
