@@ -17,7 +17,8 @@ export default function Login() {
   return (
     <main className={clsx('flex h-screen')}>
       <div
-        className={clsx('w-[58.33333333%] my-6 ml-6 rounded-3xl flex items-center justify-center relative bg-containerBg1')}>
+        className={clsx('w-[58.33333333%] my-6 ml-6 rounded-3xl flex items-center justify-center relative bg-containerBg1')}
+      >
         <Image
           className={clsx('max-h-[65%] max-w-full h-auto my-12 w-auto')}
           src={`/static/site/login/auth-login-illustration-${theme === 'dark' ? 'dark' : 'light'}.png`}
@@ -31,14 +32,14 @@ export default function Login() {
           <svg aria-label="Vercel logomark" height="22" role="img" viewBox="0 0 74 64">
             <path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z" fill="var(--color-primary)"></path>
           </svg>
-          <h1 className={clsx('mt-5 text-3xl')}>Welcome to your network! 👋</h1>
+          <h1 className={clsx('mt-5 text-3xl')}>Welcome to my net disk! 👋</h1>
           <p className={clsx('my-5')}>Please sign-in to your account and start the adventure</p>
           <Form autoComplete={'off'} layout={'vertical'}>
             <Form.Item label={'Username'} field='username' rules={[{ required: true }]}>
-              <Input placeholder={'Enter your username'}/>
+              <Input className={clsx('h-10')} placeholder={'Enter your username'}/>
             </Form.Item>
             <Form.Item label={'Password'} field='password' rules={[{ required: true }]}>
-              <Input placeholder={'············'}/>
+              <Input className={clsx('h-10')} placeholder={'············'} type={'password'}/>
             </Form.Item>
             <Form.Item>
               <Checkbox>Remember Me</Checkbox>
