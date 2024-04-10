@@ -22,6 +22,8 @@ export default <Config>{
         textDisabled: 'var(--color-text-disabled)',
         lightSuspension: 'var(--color-light-suspension)',
         mainBg: 'var(--theme-main-bg)',
+        textColor: 'var(--theme-text-color)',
+        containerBg1: 'var(--container-bg-1)',
       },
     },
   },

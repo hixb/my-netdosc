@@ -3,31 +3,35 @@
 @tailwind utilities;
 
 @import "variable";
-@import "reset";
 @import "common";
+@import "reset";
 
 [data-theme='light'], body[arco-theme="light"] {
-  --color-primary: $lightColorPrimary;
-  --color-suspension: $lightColorSuspension;
-  --color-click: $lightColorClick;
-  --color-special: $lightColorSpecial;
-  --color-disabled: $lightColorDisabled;
-  --color-text-disabled: $lightColorTextDisabled;
-  --color-light-suspension: $lightColorLightSuspension;
+  --color-primary: #{$lightColorPrimary};
+  --color-suspension: #{$lightColorSuspension};
+  --color-click: #{$lightColorClick};
+  --color-special: #{$lightColorSpecial};
+  --color-disabled: #{$lightColorDisabled};
+  --color-text-disabled: #{$lightColorTextDisabled};
+  --color-light-suspension: #{$lightColorLightSuspension};
 
-  --theme-main-bg: $lightThemeTextColor;
-  --theme-text-color: $lightThemeMainBackground;
+  --theme-text-color: #{$lightThemeTextColor};
+  --theme-main-bg: #{$lightThemeMainBackground};
+
+  --container-bg-1: #{$lightContainerBackground1};
 }
 
 [data-theme='dark'], body[arco-theme="dark"] {
-  --color-primary: $darkColorPrimary;
-  --color-suspension: $darkColorSuspension;
-  --color-click: $darkColorClick;
-  --color-special: $darkColorSpecial;
-  --color-disabled: $darkColorDisabled;
-  --color-text-disabled: $darkColorTextDisabled;
-  --color-light-suspension: $darkColorLightSuspension;
+  --color-primary: #{$darkColorPrimary};
+  --color-suspension: #{$darkColorSuspension};
+  --color-click: #{$darkColorClick};
+  --color-special: #{$darkColorSpecial};
+  --color-disabled: #{$darkColorDisabled};
+  --color-text-disabled: #{$darkColorTextDisabled};
+  --color-light-suspension: #{$darkColorLightSuspension};
 
-  --theme-main-bg: $darkThemeTextColor;
-  --theme-text-color: $darkThemeMainBackground;
+  --theme-text-color: #{$darkThemeTextColor};
+  --theme-main-bg: #{$darkThemeMainBackground};
+
+  --container-bg-1: #{$darkContainerBackground1};
 }

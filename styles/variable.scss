@@ -15,6 +15,8 @@ $lightColorLightSuspension: rgba(170, 204, 242, 1.000);
 $lightThemeTextColor: rgba(52, 52, 53, 1.000);
 $lightThemeMainBackground: rgba(255, 253, 252, 1.000);
 
+$lightContainerBackground1: rgba(248, 247, 250, 1.000);
+
 /* ==================== Dark Color Variables ==================== */
 $darkColorPrimary: rgba(65, 179, 117, 1.000);
 $darkColorSuspension: rgba(35, 197, 109, 1.000);
@@ -23,8 +25,11 @@ $darkColorSpecial: rgba(28, 212, 113, 1.000);
 $darkColorDisabled: rgba(16, 169, 86, 1.000);
 $darkColorTextDisabled: rgba(4, 109, 52, 1.000);
 $darkColorLightSuspension: rgba(1, 78, 36, 1.000);
+
 $darkThemeTextColor: rgba(255, 253, 252, 1.000);
 $darkThemeMainBackground: rgba(30, 30, 30, 1.000);
+
+$darkContainerBackground1: rgba(35, 35, 36, 1.000);
 
 /* ==================== Css Mixins ==================== */
 @mixin setTransition($s: $transitionTimeShort, $mode: all) {

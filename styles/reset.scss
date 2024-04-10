@@ -1,16 +1,13 @@
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 3px;
+  @apply w-1 h-0.5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
-  border-radius: 4px;
+  @apply rounded bg-primary;
 }
 
 body {
-  background-color: var(--theme-main-bg);
-  color: var(--theme-text-color);
+  @apply bg-mainBg text-textColor;
   @include setTransition;
 }
 
@@ -23,6 +20,9 @@ a {
 }
 
 .arco-icon {
-  font-size: 32px;
-  stroke-width: 1;
+  @apply text-3xl stroke-1;
+}
+
+strong {
+  @apply inline-block;
 }
